@@ -113,3 +113,30 @@ body {
 .rating-badge i {
     color: #f38c24;
 }
+
+
+
+.text-orange {
+    color: #e68a2e !important;
+
+}
+
+.step-item img {
+    transition: transform 0.3s ease;
+}
+.step-item:hover img {
+    transform: translateY(-5px); 
+}
+
+@media (max-width: 991px) {
+    .pe-lg-5 {
+        padding-right: 0 !important;
+    }
+    .pe-lg-4 {
+        padding-right: 0 !important;
+    }
+    .col-lg-6 {
+
+        padding-bottom: 20px;
+    }
+}
