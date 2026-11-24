@@ -2,6 +2,129 @@
 
 @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
 
+.navbar{
+  background-color: #f9f2e7;}
+  
+        /* استایلهای اختصاصی برای شبیه شدن به عکس */
+        body {
+            background-color: #f3e5d8; /* رنگ پسزمینه 
+
+کرم */
+            font-family: 'Vazirmatn', sans-serif;
+            color: #333;
+        }
+
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        /* استایل بخش متن */
+        .hero-title {
+            font-weight: 800;
+            font-size: 3rem;
+            line-height: 1.4;
+            color: #222;
+        }
+
+        .hero-title span {
+            color: #d97b29; /* رنگ نارنجی کلمه قهوهای */
+        }
+
+        .hero-desc {
+            color: #777;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        /* دکمهها */
+   
+/* دکمه ثبت سفارش */
+.btn-order {
+    background: linear-gradient(135deg, #d97724, #b85c16);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 13px 32px;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0 6px 18px rgba(217, 119, 36, 0.25);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-order:hover {
+    background: linear-gradient(135deg, #e88a35, #c76a20);
+    color: #fff;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(217, 119, 36, 0.4);
+}
+
+/* دکمه مشاهده منو */
+.btn-menu {
+    background-color: #fff;
+    color: #5c2e14;
+    border: 2px solid #d97724;
+    border-radius: 12px;
+    padding: 13px 32px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-menu:hover {
+    background-color: #5c2e14;
+    color: #fff;
+    border-color: #5c2e14;
+    transform: translateY(-4px);
+}
+
+/* افکت هنگام کلیک */
+.btn-order:active,
+.btn-menu:active {
+    transform: scale(0.96);
+}
+
+
+        /* استایل بخش عکس */
+        .hero-image-container {
+            position: relative;
+            text-align: center;
+
+        }
+
+        /* برچسبهای شناور (Floating Tags) روی عکس */
+        .floating-tag {
+            position: absolute;
+            background: #fff;
+            padding: 10px 20px;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            font-weight: bold;
+            font-size: 0.9rem;
+            z-index: 2;
+            white-space: nowrap;
+        }
+        /* narges */
+        .tag-1 { top: 30%; right: 5%; } 
+        .tag-2 { top: 20%; left: 5%; }  /* محیط صمیمی */
+        .tag-3 { bottom: 20%; right: 15%; } /* تجربه ای شیرین */
+
+
+        /* تنظیمات ریسپانسیو */
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2rem; }
+            .floating-tag { display: none; } /* در موبایل تگها مخفی شوند تا شلوغ نشود */
+            .hero-image-container { margin-top: 40px; }
+        }
+
 body {
     font-family: 'Vazirmatn', sans-serif;
     background-color: #f8f9fa; 
@@ -151,12 +274,12 @@ body {
     font-family: Tahoma, sans-serif;
 
     background: #fff;
-    padding: 40px;
 }
 
 .container {
     max-width: 1200px;
     margin: auto;
+
 }
 
 h2 {
